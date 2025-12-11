@@ -1,13 +1,13 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Image, View } from "react-native";
 import React from "react";
 
-const LoginScreen = () => {
+const Brand = () => {
   return (
-    <View style={styles.container}>
+    <View>
       <View style={styles.pngLogin}>
         <Image
           style={styles.imageLogin}
-          source={require("../assets/logoLogin.jpg")}
+          source={require("../../assets/logoLogin.jpg")}
           resizeMode="cover"
         />
       </View>
@@ -15,15 +15,9 @@ const LoginScreen = () => {
   );
 };
 
-export default LoginScreen;
+export default Brand;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    backgroundColor:"#F2F4F3"
-    
-  },
   imageLogin: {
     width: 200,
     height: 200,
